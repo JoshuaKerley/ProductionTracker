@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select name to edit:"
+        android:textSize="@dimen/_16sdp"
+        android:textColor="@android:color/black"
+        android:gravity="center_horizontal"
+        android:id="@+id/textView9"
+        android:layout_marginTop="10pt"
+        android:layout_alignParentTop="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#ffff99"
+        android:layout_below="@+id/textView9"
+        android:id="@+id/radioGroup"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp">
+
+        <RadioButton
+            android:id="@+id/radioRacks1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textSize="@dimen/_14sdp"
+            android:text="Racks 1 - Joshua Kerley" />
+
+        <RadioButton
+            android:id="@+id/radioRacks2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14sdp"
+            android:text="Racks 2 - Caleb Kerley" />
+
+        <RadioButton
+            android:id="@+id/radioBins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14sdp"
+            android:text="Bins - Alayna Kerley" />
+
+        <RadioButton
+            android:id="@+id/radioFurniture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14sdp"
+            android:text="Furniture - Josiah Kerley" />
+
+        <RadioButton
+            android:id="@+id/radioElectronics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14sdp"
+            android:text="Electronics - Mia Kerley" />
+
+        <RadioButton
+            android:id="@+id/radioBricBrac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14sdp"
+            android:text="Bric-Brac - Kate Kerley" />
+
+        <RadioButton
+            android:id="@+id/radioBinsAcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14sdp"
+            android:text="Bins-Acc - Elizabeth Kerley" />
+
+        <RadioButton
+            android:id="@+id/radioShoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14sdp"
+            android:text="Shoes - Moriah Kerley" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:text="New name: "
+        android:textSize="@dimen/_16sdp" />
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="@dimen/_100sdp"
+        android:inputType="textPersonName|textCapWords"
+        android:text=""
+        android:ems="10"
+        android:hint="Name"
+        android:textSize="@dimen/_12sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView10"
+        android:id="@+id/newName" />
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/newName"
+        android:id="@+id/linearLayout2">
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="50pt"
+            android:text="Cancel"
+            android:textSize="@dimen/_16sdp"
+            android:layout_weight="1"
+            android:background="#3399ff"
+            android:layout_marginTop="10pt"
+            android:layout_marginBottom="10pt"
+            android:layout_marginRight="5pt"
+            android:layout_marginLeft="10pt"
+            android:id="@+id/buttonDialog_Cancel" />
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="50pt"
+            android:text="Save "
+            android:textSize="@dimen/_16sdp"
+            android:layout_weight="1"
+            android:background="#3399ff"
+            android:layout_marginTop="10pt"
+            android:layout_marginBottom="10pt"
+            android:layout_marginRight="10pt"
+            android:layout_marginLeft="5pt"
+            android:id="@+id/buttonDialog_Yes" />
+
+    </LinearLayout>
+
+</RelativeLayout>

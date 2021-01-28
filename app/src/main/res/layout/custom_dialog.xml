@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add rack Ladies/Kids for Joshua Kerley?"
+        android:textSize="20pt"
+        android:gravity="center_horizontal"
+        android:id="@+id/textView9"
+        android:layout_marginTop="10pt"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textView9" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="100sp"
+            android:text="Cancel"
+            android:textSize="@dimen/_20sdp"
+            android:layout_weight="1"
+            android:background="#3399ff"
+            android:layout_marginTop="10pt"
+            android:layout_marginBottom="10pt"
+            android:layout_marginRight="5pt"
+            android:layout_marginLeft="10pt"
+            android:id="@+id/buttonDialog_Cancel" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="100sp"
+            android:text="Yes"
+            android:textSize="@dimen/_20sdp"
+            android:layout_weight="1"
+            android:background="#3399ff"
+            android:layout_marginTop="10pt"
+            android:layout_marginBottom="10pt"
+            android:layout_marginRight="10pt"
+            android:layout_marginLeft="5pt"
+            android:id="@+id/buttonDialog_Yes" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.newimagethrift.joshua.productiontracker.MainActivity">
+    <item
+        android:id="@+id/action_edit_names"
+        android:orderInCategory="100"
+        android:title="Edit Current Names"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_manage_names"
+        android:orderInCategory="100"
+        android:title="Manage Names"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_reset"
+        android:orderInCategory="100"
+        android:title="Reset"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:title="About This App"
+        app:showAsAction="never" />
+</menu>

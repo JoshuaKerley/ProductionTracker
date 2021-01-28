@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.newimagethrift.joshua.productiontracker.Submit"
+    tools:showIn="@layout/activity_submit"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/_10sdp"
+        android:text="Are You Sure You Want To Submit This Data?"
+        android:textSize="@dimen/_25sdp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:background="@android:color/holo_blue_light"
+        android:id="@+id/textView11"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        android:layout_weight="5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_40sdp"
+            android:orientation="vertical"
+            android:layout_marginTop="10pt"
+            android:layout_marginLeft="@dimen/_14sdp"
+            android:id="@+id/linearLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="#000000"
+                android:text="Racks 1: Joshua Kerley - 4321 Items"
+                android:id="@+id/textView12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="#000000"
+                android:text="Racks 2: Caleb Kerley - 4321 Items"
+                android:id="@+id/textView13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_18sdp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Total Racks Items: 8765"
+                android:id="@+id/textView20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="#000000"
+                android:layout_marginTop="15pt"
+                android:text="Bins-Hanging: Alayna Kerley - 4321 Items"
+                android:id="@+id/textView14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_18sdp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Total Bins-Hanging Items: 4321"
+                android:id="@+id/textView21" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="#000000"
+                android:layout_marginTop="15pt"
+                android:text="Furniture: Josiah Kerley - 20 Baskets"
+                android:id="@+id/textView15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="#000000"
+                android:text="Electrical: Mia Kerley - 20 Baskets"
+                android:id="@+id/textView16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="#000000"
+                android:text="Bric-Brac: Kate Kerley - 20 Baskets"
+                android:id="@+id/textView17" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="#000000"
+                android:text="Bins-Acc.: Elizabeth Kerley - 20 Baskets"
+                android:id="@+id/textView18" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="#000000"
+                android:text="Shoes: Moriah Kerley - 20 Baskets"
+                android:id="@+id/textView19" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_18sdp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Total Baskets: 100"
+                android:id="@+id/textView22" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15pt"
+                android:textSize="@dimen/_18sdp"
+                android:textColor="#000000"
+                android:textStyle="italic"
+                android:text="Total Floor Sweeps: 10"
+                android:id="@+id/totalFloorSweeps" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Submit"
+        android:textSize="@dimen/_30sdp"
+        android:background="#1aff1a"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:id="@+id/buttonSubmit"
+        android:onClick="buttonPressed" />
+
+</LinearLayout>

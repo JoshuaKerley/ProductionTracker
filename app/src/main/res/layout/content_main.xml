@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.newimagethrift.joshua.productiontracker.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Number Of Items: 4321 - Joshua Kerley"
+        android:textColor="#000000"
+        android:textSize="@dimen/_16sdp"
+        android:id="@+id/racksNumber"
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="Add Rack"
+            android:textSize="@dimen/_30sdp"
+            android:background="#3399ff"
+            android:id="@+id/button"
+            android:onClick="gotoAddRack" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00b300"
+            android:text="Toggle\nRack"
+            android:textSize="@dimen/_12sdp"
+            android:id="@+id/button5"
+            android:layout_marginLeft="16dp"
+            android:onClick="toggleRack" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Number of Bins: 123 - Caleb Kerley"
+        android:textColor="#000000"
+        android:textSize="@dimen/_16sdp"
+        android:id="@+id/binsNumber"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:text="Add Bins-Hanging"
+        android:textSize="@dimen/_30sdp"
+        android:background="#3399ff"
+        android:id="@+id/button2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="addBin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Number of Baskets: 123 - Caleb Kerley"
+        android:textColor="#000000"
+        android:textSize="@dimen/_16sdp"
+        android:id="@+id/basketsNumber"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:text="Add Basket(s)"
+        android:textSize="@dimen/_30sdp"
+        android:background="#3399ff"
+        android:id="@+id/button4"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="gotoAddBasket" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="2.5"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/linearLayout2">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="14sp"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="Sweep"
+                    android:layout_gravity="start"
+                    android:textSize="@dimen/_15sdp"
+                    android:background="#ff9933"
+                    android:id="@+id/addSweep"
+                    android:onClick="addSweep" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/sweepNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/_6sdp"
+                android:text="last: 12:00PM"
+                android:layout_alignParentBottom="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/_9sdp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.75"
+            android:text="Corrections"
+            android:textSize="@dimen/_16sdp"
+            android:background="#ff5050"
+            android:id="@+id/button3"
+            android:onClick="gotoCorrections" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="14sp"
+            android:text="Submit"
+            android:textSize="@dimen/_14sdp"
+            android:background="#1aff1a"
+            android:id="@+id/submit"
+            android:onClick="gotoSubmit" />
+
+        </LinearLayout>
+</LinearLayout>
